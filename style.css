@@ -1,0 +1,714 @@
+* {
+  font-family: "Karla", sans-serif;
+  scroll-behavior: smooth;
+  font-weight: inherit;
+  font-size: normal;
+}
+:root {
+  --color-pink: #ff6a97;
+  --color-hover: #fa036b;
+  --color-tittles: #2b161b;
+  --color-text: #645659;
+  --color-background: #f8f3f5;
+}
+
+*::selection {
+  background: var(--color-pink);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-background);
+  padding: 5px;
+}
+
+@media screen and (max-width: 899px) {
+  /* HEADER -------------------------------------------------------*/
+  .header .nav-bar {
+    display: none;
+  }
+  .header img {
+    width: 30vw;
+    padding-left: 20px;
+  }
+
+  /* HEADER -------------------------------------------------------*/
+  /* ARTICLE1 -------------------------------------------------------*/
+  .article1 {
+    color: var(--color-tittles);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* revisar -----------------*/
+    margin-bottom: 100px;
+  }
+
+  .article1 h6 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .article1 hr {
+    width: 25%;
+    height: 3px;
+    background: var(--color-text);
+    border: none;
+    margin-bottom: 26px;
+  }
+
+  .article1 h1 {
+    color: var(--color-tittles);
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .article1 h2 {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 20px;
+  }
+
+  .article1 h5 {
+    font-size: 1.1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .article1 img {
+    width: 80vw;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  .article1-content {
+    align-self: center;
+  }
+  /* ARTICLE1 -------------------------------------------------------*/
+
+  /* ARTICLE 2 ---------------------------------------------------------*/
+  .article2 {
+    width: 100%;
+    background: white;
+    padding: 51px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article2-content h6 {
+    color: var(--color-pink);
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .article2-content h6::selection {
+    color: var(--color-tittles);
+  }
+
+  .article2-content h2 {
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: 2.4rem;
+    font-family: "Playfair Display", serif;
+    color: var(--color-tittles);
+    line-height: 1.1;
+  }
+  /* ARTICLE 2 ---------------------------------------------------------*/
+
+  /* ARTICLE 3 ---------------------------------------------------------*/
+  .article3 {
+    width: 100%;
+    padding: 51px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article3-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: var(--color-tittles);
+  }
+
+  .article3-container p {
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    color: var(--color-text);
+    padding-right: 50px;
+  }
+
+  .article3-container__div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .article3-container__div a {
+    width: 250px;
+    align-self: center;
+  }
+
+  .article3-container img {
+    opacity: 0.5;
+    width: 30vw;
+    object-fit: fill;
+    align-self: center;
+  }
+  /* ARTICLE 3 ---------------------------------------------------------*/
+
+  /* ARTICLE 4 ---------------------------------------------------------*/
+  .article4 {
+    width: 100%;
+    height: 350px;
+    background-image: url(https://emmanuelpgarcia.info/wp-content/uploads/2022/02/architecture-eiffel-tower-paris-1838626.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  /* ARTICLE 4 ---------------------------------------------------------*/
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+  .article5 {
+    width: 100%;
+    background: white;
+    padding: 51px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .article5 h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--color-tittles);
+  }
+
+  .article5-content {
+    padding-left: 30px;
+  }
+
+  .article5-content p {
+    font-family: "Karla", serif;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 30px;
+  }
+
+  .article5-content hr {
+    border: none;
+    height: 3px;
+    background: var(--color-pink);
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+
+  /* ARTICLE 6 ---------------------------------------------------------*/
+  .article6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: var(--color-background);
+  }
+
+  .article6-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  .article6-div a {
+    display: flex;
+  }
+  .article6-div img {
+    width: 15vw;
+    align-self: center;
+    opacity: 0.5;
+  }
+
+  .article6-div h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-left: 50px;
+    color: var(--color-tittles);
+  }
+
+  .article6-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+
+  .article6-images img {
+    width: 30vw;
+    height: 30vh;
+    margin: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .article6-images img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  /* ARTICLE 6---------------------------------------------------------*/
+
+  /*FOOTER -----------------------------------------------------------*/
+  .footer {
+    width: 100%;
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+  }
+
+  .footer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color: var(--color-tittles);
+    padding-bottom: 10px;
+  }
+  .social h2 {
+    font-size: 2rem;
+  }
+  .footer-content a {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--color-tittles);
+  }
+}
+/* Tablet or square screen*/
+@media only screen and (min-width: 900px) {
+  /* HEADER -------------------------------------------------------*/
+
+  .header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--color-background);
+  }
+
+  .nav-bar {
+    margin-right: 2vw;
+  }
+
+  .header img {
+    margin-left: 2vw;
+  }
+
+  .header a {
+    text-transform: uppercase;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--color-tittles);
+    transition: color 0.5s, border 0.1s, outline 0.1s;
+    padding-top: 20px;
+  }
+
+  .header a:hover {
+    /* border-top: 1px solid var(--color-hover); */
+    border-top: 1px solid var(--color-hover);
+    color: var(--color-hover);
+    cursor: pointer;
+  }
+
+  /* HEADER -------------------------------------------------------*/
+
+  /* ARTICLE 1 ---------------------------------------------------------*/
+  .article1 {
+    color: var(--color-tittles);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* revisar -----------------*/
+    margin-bottom: 100px;
+  }
+
+  .article1 h6 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .article1 hr {
+    width: 25%;
+    height: 3px;
+    background: var(--color-text);
+    border: none;
+    margin-bottom: 26px;
+  }
+
+  .article1 h1 {
+    color: var(--color-tittles);
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .article1 h2 {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 20px;
+  }
+
+  .article1 h5 {
+    font-size: 1.1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .article1 img {
+    width: 45vw;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  .article1-content {
+    align-self: center;
+  }
+
+  /* ARTICLE 1 ---------------------------------------------------------*/
+
+  /* ARTICLE 2 ---------------------------------------------------------*/
+  .article2 {
+    width: 100%;
+    background: white;
+    padding: 51px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article2-content h6 {
+    color: var(--color-pink);
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .article2-content h6::selection {
+    color: var(--color-tittles);
+  }
+
+  .article2-content h2 {
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: 3.2rem;
+    font-family: "Playfair Display", serif;
+    color: var(--color-tittles);
+    line-height: 1.1;
+  }
+  /* ARTICLE 2 ---------------------------------------------------------*/
+
+  /* ARTICLE 3 ---------------------------------------------------------*/
+  .article3 {
+    width: 100%;
+    padding: 51px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article3-container h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: var(--color-tittles);
+  }
+
+  .article3-container p {
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    color: var(--color-text);
+    padding-right: 50px;
+  }
+
+  .article3-container__div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article3-container__div a {
+    width: 12vw;
+    align-self: center;
+  }
+
+  .article3-container img {
+    opacity: 0.5;
+    width: 6vw;
+    object-fit: contain;
+    align-self: center;
+  }
+  /* ARTICLE 3 ---------------------------------------------------------*/
+
+  /* ARTICLE 4 ---------------------------------------------------------*/
+  .article4 {
+    width: 100%;
+    height: 400px;
+    background-image: url(https://emmanuelpgarcia.info/wp-content/uploads/2022/02/architecture-eiffel-tower-paris-1838626.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  /* ARTICLE 4 ---------------------------------------------------------*/
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+  .article5 {
+    width: 100%;
+    background: white;
+    padding: 51px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .article5 h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--color-tittles);
+  }
+
+  .article5-content {
+    padding-left: 30px;
+  }
+
+  .article5-content p {
+    font-family: "Karla", serif;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 30px;
+  }
+
+  .article5-content hr {
+    border: none;
+    height: 3px;
+    background: var(--color-pink);
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+
+  /* ARTICLE 6 ---------------------------------------------------------*/
+  .article6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 70px;
+    background-color: var(--color-background);
+  }
+
+  .article6-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  .article6-div h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 3rem;
+    padding-left: 50px;
+    color: var(--color-tittles);
+  }
+
+  .article6-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+
+  .article6-images img {
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .article6-images img:hover {
+    transform: rotate(5deg);
+    cursor: pointer;
+  }
+
+  /* ARTICLE 6---------------------------------------------------------*/
+
+  /*FOOTER -----------------------------------------------------------*/
+  .footer {
+    width: 100%;
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    gap: 100px;
+  }
+
+  .footer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--color-tittles);
+  }
+  .social h2 {
+    font-size: 3rem;
+  }
+  .footer-content a {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: var(--color-tittles);
+  }
+}
+/*FOOTER -----------------------------------------------------------*/
+/* Desktop screen*/
+@media only screen and (min-width: 1200px) {
+  /* HEADER -------------------------------------------------------*/
+
+  .header {
+    display: flex;
+    width: 100%;
+    gap: 300px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: var(--color-background);
+  }
+
+  /* HEADER -------------------------------------------------------*/
+
+  /* ARTICLE 1 ---------------------------------------------------------*/
+  .article1 {
+    color: var(--color-tittles);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px; /* revisar -----------------*/
+    margin-bottom: 100px;
+  }
+
+  .article1 h6 {
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .article1 img {
+    width: 29vw;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  /* ARTICLE 1 ---------------------------------------------------------*/
+
+  /* ARTICLE 2 ---------------------------------------------------------*/
+  .article2-content {
+    width: 65%;
+  }
+  /* ARTICLE 2 ---------------------------------------------------------*/
+
+  /* ARTICLE 3 ---------------------------------------------------------*/
+  .article3-container {
+    width: 65%;
+  }
+  /* ARTICLE 3 ---------------------------------------------------------*/
+
+  /* ARTICLE 4 ---------------------------------------------------------*/
+  .article4 {
+    width: 100%;
+    height: 400px;
+    background-image: url(https://emmanuelpgarcia.info/wp-content/uploads/2022/02/architecture-eiffel-tower-paris-1838626.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* ARTICLE 4 ---------------------------------------------------------*/
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+
+  .article5-container {
+    width: 65%;
+    align-self: center;
+  }
+
+  /* ARTICLE 5 ---------------------------------------------------------*/
+
+  /* ARTICLE 6 ---------------------------------------------------------*/
+  .article6 {
+    width: 65%;
+    align-self: center;
+  }
+  .article6-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .article6-images img {
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+
+  /* ARTICLE 6---------------------------------------------------------*/
+
+  /*FOOTER -----------------------------------------------------------*/
+
+  /*FOOTER -----------------------------------------------------------*/
+}
